@@ -82,10 +82,16 @@ tt_kpi/
 │   └── objectifs.csv       # objectifs mensuels par catégorie
 ├── decouverte.py           # étape 2 : aperçu des données
 ├── calcul_kpi.py           # étape 3 : cumuls mensuels + taux de réalisation
-├── app.py                  # étape 4-5 : dashboard Streamlit
+├── kpi.py                  # module partagé : calcul KPI (importé par calcul_kpi.py + app.py)
+├── app.py                  # étape 4-5 : dashboard Streamlit (5 onglets, design perso, logo)
 ├── forecast.py             # étape 6 : prévision Prophet
 ├── prediction_atteinte.py  # étape 7 : probabilité d'atteinte de l'objectif annuel
 ├── anomalies.py            # étape 7 : détection des jours de vente anormaux (z-score)
+├── assets/logo_tt.png      # logo Tunisie Télécom (en-tête du dashboard)
+├── .streamlit/config.toml  # thème du dashboard
+├── requirements.txt        # librairies à installer (pip install -r)
+├── README.md               # fiche du projet (installation, lancement, structure)
+├── .gitignore              # exclut venv/ et __pycache__/ du dépôt Git
 ├── venv/                   # environnement virtuel
 └── CLAUDE.md               # ce fichier
 ```
